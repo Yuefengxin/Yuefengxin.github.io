@@ -130,6 +130,85 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-系统分析与设计Week9" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/04/系统分析与设计Week9/">系统分析与设计Week9</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/04/系统分析与设计Week9/" class="archive-article-date">
+  	<time datetime="2019-05-04T14:08:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-04</time>
+</a>
+        
+      </header>
+    
+<!-- 目录内容 -->
+		
+<!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="第九周作业"><a href="#第九周作业" class="headerlink" title="第九周作业"></a>第九周作业</h1><h2 id="使用-UMLet-建模："><a href="#使用-UMLet-建模：" class="headerlink" title="使用 UMLet 建模："></a>使用 UMLet 建模：</h2><h3 id="1、使用类图，分别对-Asg-RH-文档中-Make-Reservation-用例以及-Payment-用例开展领域建模。然后，根据上述模型，给出建议的数据表以及主要字段，特别是主键和外键"><a href="#1、使用类图，分别对-Asg-RH-文档中-Make-Reservation-用例以及-Payment-用例开展领域建模。然后，根据上述模型，给出建议的数据表以及主要字段，特别是主键和外键" class="headerlink" title="1、使用类图，分别对 Asg_RH 文档中 Make Reservation 用例以及 Payment 用例开展领域建模。然后，根据上述模型，给出建议的数据表以及主要字段，特别是主键和外键"></a>1、使用类图，分别对 Asg_RH 文档中 Make Reservation 用例以及 Payment 用例开展领域建模。然后，根据上述模型，给出建议的数据表以及主要字段，特别是主键和外键</h3><p>注意事项：</p>
+<ul>
+<li>对象必须是名词、特别是技术名词、报表、描述类的处理；</li>
+<li>关联必须有多重性、部分有名称与导航方向</li>
+<li>属性要注意计算字段<h4 id="Make-Reservation"><a href="#Make-Reservation" class="headerlink" title="Make Reservation"></a>Make Reservation</h4><img src="/2019/05/04/系统分析与设计Week9/订酒店领域建模.PNG" alt="订酒店领域建模">  </li>
+</ul>
+<h4 id="Payment"><a href="#Payment" class="headerlink" title="Payment"></a>Payment</h4><p><img src="/2019/05/04/系统分析与设计Week9/支付领域建模.PNG" alt="支付领域建模">  </p>
+<h4 id="数据建模，为了简化描述仅需要给出表清单，例如："><a href="#数据建模，为了简化描述仅需要给出表清单，例如：" class="headerlink" title="数据建模，为了简化描述仅需要给出表清单，例如："></a>数据建模，为了简化描述仅需要给出表清单，例如：</h4><p><strong>Hotel（ID/Key，Name，LoctionID/Fkey，Address…..）</strong>  </p>
+<p>Hotel（ID/Key，Name，LoctionID/Fkey，Address，Stars，Loc-code，Brief-intr，Favorites，Low-price，Rating，Max-discount）<br>Location（ID/Key，Name，IsFavorite）<br>Traveler(ID/Key，Name，Email)<br>Reservation（ID/Key，TravelerID/Fkey，Date，Time，CheckInDate，NumberOfNights）<br>ReservationItem（ID/Key，Type，Date，Time，CheckInDate，Number of nights，Adult num，ChildrenNum，ChildrensAge）<br>Room(ID/Key，HotelID/Fkey，Type，Date，Reserved，IsAvailable，Price)<br>RoomDesc(ID/Key，type，totals，list-price，description)<br>Room-Catalog(ID/Key，type)  </p>
+<p>Payment（ID/Key，ReservationID/Fkey，Time，TotalCost）<br>CreditCard（ID/Key，Type）<br>CreditCardDetail（ID/Key，Number，SecurityCode，ExpiryDate）<br>PaymentForm（ID/Key，PaymentID/Fkey，CreditCardDetailID/Fkey，CardHolderDetailID/Fkey）<br>CardHolderDetail（ID/Key，FirstName，LastName，Address，City ，State，Country，PostCode，DaytimeTelephone，EveningTelephone ）  </p>
+<h3 id="2、使用-UML-State-Model，对每个订单对象生命周期建模"><a href="#2、使用-UML-State-Model，对每个订单对象生命周期建模" class="headerlink" title="2、使用 UML State Model，对每个订单对象生命周期建模"></a>2、使用 UML State Model，对每个订单对象生命周期建模</h3><ul>
+<li>建模对象： 参考 Asg_RH 文档， 对 Reservation/Order 对象建模。</li>
+<li>建模要求： 参考练习不能提供足够信息帮助你对订单对象建模，请参考现在 定旅馆 的旅游网站，尽可能分析围绕订单发生的各种情况，直到订单通过销售事件（柜台销售）结束订单。<br><img src="/2019/05/04/系统分析与设计Week9/订单状态建模.PNG" alt="订单状态建模">  </li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/05/04/系统分析与设计Week9/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-系统分析与设计Week7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
